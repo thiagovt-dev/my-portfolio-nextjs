@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
 
 const IntoSection = () => {
@@ -21,15 +22,23 @@ const IntoSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg lg:text-xl">
-            Sou um desenvolvedor Full Stack, adoro código e adoro estudar também. Estou sempre disposto a resolver problemas usando meus conhecimentos.
+            Sou um desenvolvedor Full Stack, adoro código e adoro resolver problemas usando meus
+            conhecimentos. Se você precisa de um portfólio, uma landing page, uma API ou uma
+            aplicação completa como um e-commerce ou uma plataforma de gerenciamento de tarefas, é
+            só me chamar!
           </p>
           <div>
             <button className=" px-6 py-3 mt-6 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-r from-cyan-500 to-blue-500 hover:shadow-[0_3px_20px_rgba(250,_250,_250,_0.7)]">
-              Hire me
+              <Link href="/#contact">Fale comigo</Link>
             </button>
-            <button className=" px-6 py-3 w-full sm:w-fit rounded-full bg-transparent hover:bg-slate-800 hover:shadow-[0_3px_20px_rgba(250,_250,_250,_0.7)] border border-blue-500 mt-3">
-              Download CV
-            </button>
+            <Link
+              href="/curriculo_thiago_vasconcelos.pdf"
+              target="_blank"
+              rel="noopener noreferrer">
+              <button className=" px-6 py-3 w-full sm:w-fit rounded-full bg-transparent hover:bg-slate-800 hover:shadow-[0_3px_20px_rgba(250,_250,_250,_0.7)] border border-blue-500 mt-3">
+                Download CV
+              </button>
+            </Link>
           </div>
         </div>
         <div className="col-span-5 place-self-center mt-4 lg:mt-0 ">
@@ -40,6 +49,7 @@ const IntoSection = () => {
               className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
               width={280}
               height={280}
+              loading="eager"
             />
           </div>
         </div>
