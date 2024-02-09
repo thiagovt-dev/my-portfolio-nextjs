@@ -45,7 +45,7 @@ const AboutSection = () => {
     });
   };
   return (
-    <section >
+    <section>
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-8 sm:py-16 xl:px-6 ">
         <Image
           src="/IMG_3119.jpeg"
@@ -56,7 +56,7 @@ const AboutSection = () => {
         />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h1 className="text-4xl font-bold mb-4">Sobre mim</h1>
-          <p className="text-base lg:text-lg">
+          <p className="text-base lg:text-lg text-justify">
             Sou um desenvolvedor web fullstack que gosta de criar soluções utilizando meus
             conhecimentos. Minha missão é desenvolver aplicações com excelência, buscando sempre
             aprimorar minhas habilidades. Tenho experiência com tecnologias front-end como
@@ -74,7 +74,7 @@ const AboutSection = () => {
               Formação
             </TabButton>
           </div>
-          <div className="mt-5">{TAB_BUTTON_DATA.find((t)=>t.id === tab)?.content}</div>
+          <div className="mt-5">{TAB_BUTTON_DATA.find((t) => t.id === tab)?.content}</div>
         </div>
       </div>
     </section>

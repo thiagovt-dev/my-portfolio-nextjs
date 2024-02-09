@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const SpinnerButton = () => {
   return (
@@ -21,6 +21,6 @@ const SpinnerButton = () => {
       <span className="sr-only">Loading...</span>
     </div>
   );
-}
+};
 
-export default SpinnerButton
+export default SpinnerButton;
