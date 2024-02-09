@@ -39,13 +39,13 @@ export const EmailTemplate = ({ name, subject, message }: EmailTemplateProps) =>
         <Body className="bg-white my-auto mx-auto font-sans px-2">
           <Container className="border border-solid border-[#eaeaea] rounded my-[40px] mx-auto p-[20px] max-w-[580px]">
             <Section className="mt-[32px]">
-              <Img
+              {/* <Img
                 src={`${process.env.baseUrl}/emailLogo.png`}
                 width="40"
                 height="37"
                 alt="logo"
                 className="my-0 mx-auto"
-              />
+              /> */}
             </Section>
             <Heading className="text-black text-[28px] font-normal text-center p-0 my-[30px] mx-0">
               Obrigado pelo seu contato, <strong>{name}</strong>!
@@ -78,13 +78,13 @@ export const EmailTemplate = ({ name, subject, message }: EmailTemplateProps) =>
                     className="flex justify-center items-center gap-1"
                     href="https://github.com/thiagovt-dev">
                     <Text className="underline">Acesse meu portfolio no github</Text>
-                    <Img
+                    {/* <Img
                       src={`${process.env.baseUrl}/icons8-github.png`}
                       width="24"
                       height="24"
                       alt="Vercel"
                       className="my-0 mx-auto"
-                    />
+                    /> */}
                   </Link>
                 </Column>
                 <Column>
@@ -92,13 +92,13 @@ export const EmailTemplate = ({ name, subject, message }: EmailTemplateProps) =>
                     className="flex items-center justify-center gap-1"
                     href="https://www.linkedin.com/in/thiagovasconcelosteixeira/">
                     <Text className="underline">Acesse meu perfil no linkedin </Text>
-                    <Img
+                    {/* <Img
                       src={`${process.env.baseUrl}/icons8-linkedin.png`}
                       width="24"
                       height="24"
                       alt="Vercel"
                       className="my-0 mx-auto"
-                    />
+                    /> */}
                   </Link>
                 </Column>
               </Row>
