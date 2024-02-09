@@ -13,7 +13,7 @@ export const formData = (event: FormEvent<HTMLFormElement>) => {
 };
 
 export const postEmail = async (JSONdata: string) => {
-  const res = await fetch(`${process.env.NEXT_PUBLIC_APIURL}/api/send`, {
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/send`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
