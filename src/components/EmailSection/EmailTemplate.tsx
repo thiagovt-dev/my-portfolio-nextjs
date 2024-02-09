@@ -24,6 +24,10 @@ interface EmailTemplateProps {
   message: string;
 }
 
+const baseUrl = process.env.NEXT_PUBLIC_API_URL
+  ? `https://${process.env.NEXT_PUBLIC_API_URL}`
+  : "";
+
 export const EmailTemplate = ({ name, subject, message }: EmailTemplateProps) => {
   const previewText = `Que bom ter você aqui, ${name}!`;
 
@@ -36,7 +40,7 @@ export const EmailTemplate = ({ name, subject, message }: EmailTemplateProps) =>
           <Container className="border border-solid border-[#eaeaea] rounded my-[40px] mx-auto p-[20px] max-w-[580px]">
             <Section className="mt-[32px]">
               <Img
-                src={`${process.env.NEXT_PUBLIC_API_URL}/reshot-icon-browser-DEAK34BLPC.svg`}
+                src={`${process.env.baseUrl}/emailLogo.png`}
                 width="40"
                 height="37"
                 alt="logo"
@@ -75,7 +79,7 @@ export const EmailTemplate = ({ name, subject, message }: EmailTemplateProps) =>
                     href="https://github.com/thiagovt-dev">
                     <Text className="underline">Acesse meu portfolio no github</Text>
                     <Img
-                      src={`${process.env.NEXT_PUBLIC_API_URL}/icons8-github.svg`}
+                      src={`${process.env.baseUrl}/icons8-github.png`}
                       width="24"
                       height="24"
                       alt="Vercel"
@@ -89,7 +93,7 @@ export const EmailTemplate = ({ name, subject, message }: EmailTemplateProps) =>
                     href="https://www.linkedin.com/in/thiagovasconcelosteixeira/">
                     <Text className="underline">Acesse meu perfil no linkedin </Text>
                     <Img
-                      src={`${process.env.NEXT_PUBLIC_API_URL}/icons8-linkedin.svg`}
+                      src={`${process.env.baseUrl}/icons8-linkedin.png`}
                       width="24"
                       height="24"
                       alt="Vercel"
