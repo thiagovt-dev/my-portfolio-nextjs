@@ -45,4 +45,13 @@ export const projectsData: ProjectsData[] = [
     gitUrl: "https://github.com/thiagovt-dev/OnebitFlix_backend",
     previewUrl: "https://api-onebitlfix.onrender.com/admin",
   },
+  {
+    id: 5,
+    title: "Portfólio Next.js ",
+    description: "Portfólio para desenvolvedor utilizando Next.js",
+    imgUrl: "/projects/5.png",
+    tags: ["All", "Front-end"],
+    gitUrl: "https://github.com/thiagovt-dev/my-portfolio-nextjs",
+    previewUrl: "thiagovasconcelos.dev.br/",
+  },
 ];
