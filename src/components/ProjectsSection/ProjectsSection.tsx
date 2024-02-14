@@ -22,7 +22,7 @@ const ProjectsSection = () => {
   };
 
   return (
-    <section ref={ref}>
+    <section ref={ref} id="projects">
       <h2 className="text-center text-4xl font-bold mt-4 mb-6 md:mb-12">Meus projetos</h2>
       <div className="flex flex-row justify-center items-center gap-2 py-6">
         <ProjectTag onClick={() => handleTagChange("All")} name="All" isSelected={tag === "All"} />

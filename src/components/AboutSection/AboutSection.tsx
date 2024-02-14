@@ -45,11 +45,11 @@ const AboutSection = () => {
     });
   };
   return (
-    <section>
-      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-8 sm:py-16 xl:px-6 ">
+    <section id="about">
+      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 md:px-4 xl:gap-8 sm:py-16 xl:px-6 ">
         <Image
           src="/IMG_3119.jpeg"
-          alt=""
+          alt="myself"
           width={500}
           height={500}
           className="border-black rounded-xl shadow-[rgba(150,_150,_150,_0.2)_0px_20px_30px_-7px]"

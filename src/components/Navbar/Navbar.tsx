@@ -13,6 +13,10 @@ export interface NavLinkItem {
 
 const navLinks: NavLinkItem[] = [
   {
+    title: "Inicio",
+    path: "#home",
+  },
+  {
     title: "Sobre",
     path: "#about",
   },

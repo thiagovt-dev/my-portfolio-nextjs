@@ -8,15 +8,15 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col">
+    <main className="flex min-h-screen flex-col" id="home">
       <Navbar />
-      <div className="container mt-24 mx-auto px-14 py-5">
+      <div className="container mt-24 mx-auto px-5 md:px-14 py-5">
         <IntoSection />
         <AboutSection />
         <ProjectsSection />
-        <EmailSection/>
+        <EmailSection />
       </div>
-      <Footer/>
+      <Footer />
     </main>
   );
 }
