@@ -28,21 +28,25 @@ const EmailSection = () => {
     setButtonText(<SpinnerButton />);
 
     const JSONdata = JSON.stringify(formData);
-
-    const response = await postEmail(JSONdata);
-
-    if (response.status === 200) {
-      setEmailSubmitted(true);
-      setButtonText("Enviar Mensagem");
-      setFormData({
-        name: "",
-        email: "",
-        subject: "",
-        message: "",
-      });
-      setTimeout(() => {
-        setEmailSubmitted(false);
-      }, 2000);
+    try {
+      const response = await postEmail(JSONdata);
+  
+      if (response.status === 200) {
+        setEmailSubmitted(true);
+        setButtonText("Enviar Mensagem");
+        setFormData({
+          name: "",
+          email: "",
+          subject: "",
+          message: "",
+        });
+        setTimeout(() => {
+          setEmailSubmitted(false);
+        }, 2000);
+      }
+      
+    } catch (error) {
+      
     }
   };
   return (
@@ -143,6 +147,7 @@ const EmailSection = () => {
               required
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
               placeholder="Tenho uma ideia de projeto e gostaria da sua ajuda..."
+              maxLength={300}
             />
           </div>
           <button
