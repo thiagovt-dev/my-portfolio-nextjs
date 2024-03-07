@@ -54,4 +54,13 @@ export const projectsData: ProjectsData[] = [
     gitUrl: "https://github.com/thiagovt-dev/my-portfolio-nextjs",
     previewUrl: "thiagovasconcelos.dev.br/",
   },
+  {
+    id: 6,
+    title: "Gym Junkies ",
+    description: "Contribuição para projeto open source construindo uma TDEE calculator",
+    imgUrl: "/projects/6.png",
+    tags: ["All", "Front-end"],
+    gitUrl: "https://github.com/thiagovt-dev/Gym-Junkies",
+    previewUrl: "https://gymjunkies.netlify.app/",
+  },
 ];
