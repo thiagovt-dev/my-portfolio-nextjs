@@ -27,14 +27,14 @@ const ProjectsSection = () => {
       <div className="flex flex-row justify-center items-center gap-2 py-6">
         <ProjectTag onClick={() => handleTagChange("All")} name="All" isSelected={tag === "All"} />
         <ProjectTag
-          onClick={() => handleTagChange("Front-end")}
-          name="Front-end"
-          isSelected={tag === "Front-end"}
+          onClick={() => handleTagChange("Web")}
+          name="Web"
+          isSelected={tag === "Web"}
         />
         <ProjectTag
-          onClick={() => handleTagChange("Back-end")}
-          name="Back-end"
-          isSelected={tag === "Back-end"}
+          onClick={() => handleTagChange("Mobile")}
+          name="Mobile"
+          isSelected={tag === "Mobile"}
         />
       </div>
       <div className="grid md:grid-cols-3 gap-8 md:gap-12">
