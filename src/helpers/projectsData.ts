@@ -63,13 +63,13 @@ export const projectsData: ProjectsData[] = [
     gitUrl: "https://github.com/thiagovt-dev/Gym-Junkies",
     previewUrl: "https://gymjunkies.netlify.app/",
   },
-  {
-    id: 7,
-    title: "Rental Estate Imobiliária ",
-    description: "Landing Page para imobiliária",
-    imgUrl: "/projects/7.png",
-    tags: ["All", "Web"],
-    gitUrl: "",
-    previewUrl: "https://real-estate-lp-roan.vercel.app/",
-  },
+  // {
+  //   id: 7,
+  //   title: "Rental Estate Imobiliária ",
+  //   description: "Landing Page para imobiliária",
+  //   imgUrl: "/projects/7.png",
+  //   tags: ["All", "Web"],
+  //   gitUrl: "",
+  //   previewUrl: "https://real-estate-lp-roan.vercel.app/",
+  // },
 ];
